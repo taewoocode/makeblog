@@ -1,4 +1,4 @@
-package me.shinsunyoung.springbootdeveloper;
+package me.shinsunyg.springbootdeveloper;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
