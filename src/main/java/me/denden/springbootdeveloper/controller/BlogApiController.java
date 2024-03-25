@@ -1,11 +1,11 @@
-package me.shinsunyoung.springbootdeveloper.controller;
+package me.denden.springbootdeveloper.controller;
 
 import lombok.RequiredArgsConstructor;
-import me.shinsunyoung.springbootdeveloper.domain.Article;
-import me.shinsunyoung.springbootdeveloper.dto.AddArticleRequest;
-import me.shinsunyoung.springbootdeveloper.dto.ArticleResponse;
-import me.shinsunyoung.springbootdeveloper.dto.UpdateArticleRequest;
-import me.shinsunyoung.springbootdeveloper.service.BlogService;
+import me.denden.springbootdeveloper.domain.Article;
+import me.denden.springbootdeveloper.dto.AddArticleRequest;
+import me.denden.springbootdeveloper.dto.ArticleResponse;
+import me.denden.springbootdeveloper.dto.UpdateArticleRequest;
+import me.denden.springbootdeveloper.service.BlogService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

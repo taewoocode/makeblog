@@ -1,4 +1,4 @@
-package me.shinsunyoung.springbootdeveloper.dto;
+package me.denden.springbootdeveloper.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

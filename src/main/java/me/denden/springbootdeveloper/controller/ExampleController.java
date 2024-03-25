@@ -1,4 +1,4 @@
-package me.shinsunyoung.springbootdeveloper.controller;
+package me.denden.springbootdeveloper.controller;
 
 import lombok.Getter;
 import lombok.Setter;

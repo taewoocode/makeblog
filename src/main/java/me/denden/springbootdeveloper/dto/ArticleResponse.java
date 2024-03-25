@@ -1,7 +1,7 @@
-package me.shinsunyoung.springbootdeveloper.dto;
+package me.denden.springbootdeveloper.dto;
 
 import lombok.Getter;
-import me.shinsunyoung.springbootdeveloper.domain.Article;
+import me.denden.springbootdeveloper.domain.Article;
 
 @Getter
 public class ArticleResponse {

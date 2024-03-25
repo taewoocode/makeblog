@@ -1,8 +1,8 @@
-package me.shinsunyoung.springbootdeveloper.dto;
+package me.denden.springbootdeveloper.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import me.shinsunyoung.springbootdeveloper.domain.Article;
+import me.denden.springbootdeveloper.domain.Article;
 
 import java.time.LocalDateTime;
 
