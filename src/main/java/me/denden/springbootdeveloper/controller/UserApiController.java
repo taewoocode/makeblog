@@ -16,7 +16,7 @@ public class UserApiController {
     @PostMapping("/user") //등록
     public String signup(AddUserRequest request) {
         userService.save( request ); //userService객체
-        return "redirect:/login";
+        return "redirect:/login"; //회원 가입 완료이후 login page로 이동한다.
 
     }
 }
