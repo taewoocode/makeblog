@@ -3,6 +3,7 @@ package me.denden.springbootdeveloper.config;
 import lombok.RequiredArgsConstructor;
 import me.denden.springbootdeveloper.config.jwt.TokenProvider;
 import me.denden.springbootdeveloper.config.oauth.OAuth2AuthorizationRequestBasedOnCookieRepository;
+import me.denden.springbootdeveloper.config.oauth.OAuth2SuccessHandler;
 import me.denden.springbootdeveloper.config.oauth.OAuth2UserCustomService;
 import me.denden.springbootdeveloper.repository.RefreshTokenRepository;
 import me.denden.springbootdeveloper.service.UserService;
@@ -29,6 +30,7 @@ public class WebOAuthSecurityConfig {
     private final TokenProvider tokenProvider;
     private final RefreshTokenRepository refreshTokenRepository;
     private final UserService userService;
+    private final me.denden.springbootdeveloper.config.oauth.OAuth2SuccessHandler OAuth2SuccessHandler;
 
     @Bean
     public WebSecurityCustomizer configure() {

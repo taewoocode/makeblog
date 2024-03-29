@@ -16,8 +16,8 @@ public class BlogService {
 
     private final BlogRepository blogRepository;
 
-    public Article save(AddArticleRequest request) {
-        return blogRepository.save(request.toEntity());
+    public Article save(AddArticleRequest request, String userName) {
+        return blogRepository.save(request.toEntity(userName));
     }
 
     public List<Article> findAll() {
@@ -35,10 +35,10 @@ public class BlogService {
 
     @Transactional
     public Article update(long id, UpdateArticleRequest request) {
-        Article article = blogRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("not found : " + id));
+        Article article = blogRepository.findById( id )
+                .orElseThrow( () -> new IllegalArgumentException( "not found : " + id ) );
 
-        article.update(request.getTitle(), request.getContent());
+        article.update( request.getTitle(), request.getContent() );
 
         return article;
     }

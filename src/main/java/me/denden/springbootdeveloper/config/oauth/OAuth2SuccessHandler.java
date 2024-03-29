@@ -1,10 +1,10 @@
 package me.denden.springbootdeveloper.config.oauth;
 
-import com.nimbusds.oauth2.sdk.token.RefreshToken;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import me.denden.springbootdeveloper.config.jwt.TokenProvider;
+import me.denden.springbootdeveloper.domain.ReFreshToken;
 import me.denden.springbootdeveloper.domain.User;
 import me.denden.springbootdeveloper.repository.RefreshTokenRepository;
 import me.denden.springbootdeveloper.service.UserService;
@@ -50,10 +50,9 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
     }
 
     private void saveRefreshToken(Long userId, String newRefreshToken) {
-        RefreshToken refreshToken = refreshTokenRepository.findByUserId(userId)
-                .map(entity -> entity.update(newRefreshToken))
-                .orElse(new RefreshToken(userId, newRefreshToken));
-
+        ReFreshToken refreshToken = refreshTokenRepository.findByUserId( userId )
+                .map( entity -> entity.update( newRefreshToken ) )
+                .orElse( new ReFreshToken( userId, newRefreshToken ) );
         refreshTokenRepository.save(refreshToken);
     }
 
