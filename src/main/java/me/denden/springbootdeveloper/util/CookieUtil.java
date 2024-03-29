@@ -1,6 +1,7 @@
 package me.denden.springbootdeveloper.util;
 
 import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.util.SerializationUtils;
 
@@ -16,6 +17,22 @@ public class CookieUtil {
         cookie.setPath( "/" );
         cookie.setMaxAge( maxAge );
         response.addCookie( cookie );
+    }
+
+    public static void deleteCookie(HttpServletRequest request, HttpServletResponse response, String name) {
+        Cookie[] cookies = request.getCookies();
+        if (cookies == null) {
+            return;
+        }
+
+        for (Cookie cookie : cookies) {
+            if (name.equals( cookie.getName() )) {
+                cookie.setValue( "" );
+                cookie.setPath( "/" );
+                cookie.setMaxAge( 0 );
+                response.addCookie( cookie );
+            }
+        }
     }
 
     //객체를 직렬화하면 객체 상태 그대로 저장한다

@@ -29,9 +29,10 @@ public class User implements UserDetails {
     private String password;
 
     @Builder
-    public User(String email, String password, String auth) { //builder 패턴으로 객체를 생성한다.
+    public User(String email, String password, String nickName) { //builder 패턴으로 객체를 생성한다.
         this.email = email;
         this.password = password;
+        this.nickName = nickName;
     }
 
     @Override
@@ -67,5 +68,15 @@ public class User implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    //oauth2 추가
+    @Column(name = "nickname", unique = true)
+    private String nickName;
+
+    public User update(String nickName) {
+        this.nickName = nickName;
+
+        return this;
     }
 }
