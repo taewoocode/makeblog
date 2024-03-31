@@ -1,4 +1,4 @@
-package me.denden.springbootdeveloper.config;
+/*package me.denden.springbootdeveloper.config;
 
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
@@ -63,4 +63,4 @@ public class WebSecurityConfig {
     }
 
 
-}
+}*/

@@ -6,6 +6,7 @@ import me.denden.springbootdeveloper.domain.Article;
 import me.denden.springbootdeveloper.dto.AddArticleRequest;
 import me.denden.springbootdeveloper.dto.UpdateArticleRequest;
 import me.denden.springbootdeveloper.repository.BlogRepository;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -29,8 +30,13 @@ public class BlogService {
                 .orElseThrow(() -> new IllegalArgumentException("not found : " + id));
     }
 
+
     public void delete(long id) {
-        blogRepository.deleteById(id);
+        Article article = blogRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("not found : " + id));
+
+        authorizeArticleAuthor(article);
+        blogRepository.delete(article);
     }
 
     @Transactional
@@ -42,4 +48,9 @@ public class BlogService {
 
         return article;
     }
+
+    private static void authorizeArticleAuthor(Article article) {
+        String userName = SecurityContextHolder.getContext().getAuthentication().getName();
+    }
+
 }

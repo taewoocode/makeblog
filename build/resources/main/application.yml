@@ -11,10 +11,6 @@ spring:
   h2:
     console:
       enabled: true
-jwt:
-  issuer: ajufresh@gmail.com
-  secret_key: study-springboot
-
   security:
     oauth2:
       client:
@@ -25,5 +21,8 @@ jwt:
             scope:
               - email
               - profile
+jwt:
+  is: qkrxodn6035@gmail.com
+  secret_key: study-springboot
 
 
