@@ -18,18 +18,16 @@ public class UserApiController {
 
     private final UserService userService;
 
-    @PostMapping("/user") //등록
+    @PostMapping("/user")
     public String signup(AddUserRequest request) {
-        userService.save( request ); //userService객체
-        return "redirect:/login"; //회원 가입 완료이후 login page로 이동한다.
-
+        userService.save(request);
+        return "redirect:/login";
     }
 
-    //로그아웃 기능 구현
     @GetMapping("/logout")
     public String logout(HttpServletRequest request, HttpServletResponse response) {
-        new SecurityContextLogoutHandler().logout( request,response,
-                SecurityContextHolder.getContext().getAuthentication() );
-        return "redirect/login";
+        new SecurityContextLogoutHandler().logout(request, response, SecurityContextHolder.getContext().getAuthentication());
+        return "redirect:/login";
     }
+
 }

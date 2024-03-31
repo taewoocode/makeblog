@@ -7,7 +7,6 @@ spring:
     defer-datasource-initialization: true
   datasource:
     url: jdbc:h2:mem:testdb
-    username: sa
   h2:
     console:
       enabled: true
@@ -16,13 +15,14 @@ spring:
       client:
         registration:
           google:
-            client-id: 202418033513-fl67ref1i3dpgtmoj6ivqop7t7i68g46.apps.googleusercontent.com
-            client-secret: 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
+            client-id: 450518.com
+            client-secret: GOCS
             scope:
               - email
               - profile
 jwt:
-  is: qkrxodn6035@gmail.com
-  secret_key: study-springboot
+  issuer: qkrxodn6035@gmail.com
+  secret_key: taewoo-spring
+
 
 

@@ -1,12 +1,12 @@
 package me.denden.springbootdeveloper.repository;
 
-import me.denden.springbootdeveloper.domain.ReFreshToken;
+import me.denden.springbootdeveloper.domain.RefreshToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
-public interface RefreshTokenRepository extends JpaRepository<ReFreshToken, Long> {
-    Optional<ReFreshToken> findByUserId(Long userId);
-    Optional<ReFreshToken> findByRefreshToken(String refreshToken);
+public interface RefreshTokenRepository extends JpaRepository<RefreshToken, Long> {
+    Optional<RefreshToken> findByUserId(Long userId);
+    Optional<RefreshToken> findByRefreshToken(String refreshToken);
 
 }

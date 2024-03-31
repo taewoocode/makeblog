@@ -76,6 +76,7 @@ public class WebOAuthSecurityConfig {
         return http.build();
     }
 
+
     @Bean
     public OAuth2SuccessHandler oAuth2SuccessHandler() {
         return new OAuth2SuccessHandler(tokenProvider,

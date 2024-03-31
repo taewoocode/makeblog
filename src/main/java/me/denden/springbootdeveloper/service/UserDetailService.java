@@ -10,13 +10,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserDetailService implements UserDetailsService {
 
-    private final UserRepository userRepository; // 의존성 추가
+    private final UserRepository userRepository;
 
     @Override
     public User loadUserByUsername(String email) {
-        return userRepository.findByEmail( email )
-                .orElseThrow( () -> new IllegalArgumentException( (email) ) );
-
-
+        return userRepository.findByEmail(email)
+                .orElseThrow(() -> new IllegalArgumentException((email)));
     }
 }
