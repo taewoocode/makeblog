@@ -10,3 +10,20 @@ spring:
   h2:
     console:
       enabled: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 450518053586-d4mmc1gvc6o28ct056rpt6q9i7qd1rre.apps.googleusercontent.com
+
+            client-secret: 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
+            scope:
+              - email
+              - profile
+jwt:
+  issuer: qkrxodn6035@gmail.com
+  secret_key: taewoo-spring
+
+
+

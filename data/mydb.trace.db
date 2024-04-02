@@ -1,0 +1,33 @@
+2024-04-02 16:31:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select u1_0.id,u1_0.email,u1_0.nickname,u1_0.password from users u1_0 where u1_0.email=? [42104-214]
+2024-04-02 16:31:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select u1_0.id,u1_0.email,u1_0.nickname,u1_0.password from users u1_0 where u1_0.email=? [42104-214]
+2024-04-02 16:31:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ARTICLE" not found (this database is empty); SQL statement:
+select a1_0.id,a1_0.author,a1_0.content,a1_0.created_at,a1_0.title,a1_0.updated_at from article a1_0 [42104-214]
+2024-04-02 16:31:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ARTICLE" not found (this database is empty); SQL statement:
+select a1_0.id,a1_0.author,a1_0.content,a1_0.created_at,a1_0.title,a1_0.updated_at from article a1_0 [42104-214]
+2024-04-02 16:32:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select u1_0.id,u1_0.email,u1_0.nickname,u1_0.password from users u1_0 where u1_0.email=? [42104-214]
+2024-04-02 16:32:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select u1_0.id,u1_0.email,u1_0.nickname,u1_0.password from users u1_0 where u1_0.email=? [42104-214]
+2024-04-02 16:33:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select u1_0.id,u1_0.email,u1_0.nickname,u1_0.password from users u1_0 where u1_0.email=? [42104-214]
+2024-04-02 16:34:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select u1_0.id,u1_0.email,u1_0.nickname,u1_0.password from users u1_0 where u1_0.email=? [42104-214]
+2024-04-02 16:35:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select u1_0.id,u1_0.email,u1_0.nickname,u1_0.password from users u1_0 where u1_0.email=? [42104-214]
+2024-04-02 16:36:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select u1_0.id,u1_0.email,u1_0.nickname,u1_0.password from users u1_0 where u1_0.email=? [42104-214]
+2024-04-02 16:37:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select u1_0.id,u1_0.email,u1_0.nickname,u1_0.password from users u1_0 where u1_0.email=? [42104-214]
